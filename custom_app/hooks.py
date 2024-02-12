@@ -29,7 +29,9 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+    "Item" : "public/js/item.js"
+    }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -111,40 +113,39 @@ app_license = "MIT"
 # Override standard doctype classes
 
 # override_doctype_class = {
-#	"ToDo": "custom_app.overrides.CustomToDo"
+# 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
 # Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+    'Item': { 
+        'item': 'custom_app/public/js/item.js'
+    }
+}
+
 
 # Scheduled Tasks
 # ---------------
 
 # scheduler_events = {
-#	"all": [
-#		"custom_app.tasks.all"
-#	],
-#	"daily": [
-#		"custom_app.tasks.daily"
-#	],
-#	"hourly": [
-#		"custom_app.tasks.hourly"
-#	],
-#	"weekly": [
-#		"custom_app.tasks.weekly"
-#	],
-#	"monthly": [
-#		"custom_app.tasks.monthly"
-#	],
+# 	"all": [
+# 		"custom_app.tasks.all"
+# 	],
+# 	"daily": [
+# 		"custom_app.tasks.daily"
+# 	],
+# 	"hourly": [
+# 		"custom_app.tasks.hourly"
+# 	],
+# 	"weekly": [
+# 		"custom_app.tasks.weekly"
+# 	],
+# 	"monthly": [
+# 		"custom_app.tasks.monthly"
+# 	],
 # }
 
 # Testing

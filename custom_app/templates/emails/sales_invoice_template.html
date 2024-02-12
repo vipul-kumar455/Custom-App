@@ -1,0 +1,7 @@
+<h3>Latest 5 Sales Invoices for Item - {{ item_name }} </h3>
+
+<ul>
+    {% for invoice in sales_invoices %}
+        <li>{{ invoice['name'] }} - {{ invoice['posting_date'] }}</li>
+    {% endfor %}
+</ul>
